@@ -10,7 +10,7 @@ load_dotenv()
 
 # Configure Streamlit page settings
 st.set_page_config(
-    page_title="Chat with Boo's ChatBot!",
+    page_title="Chat with Boo's Finance ChatBot!",
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
@@ -44,7 +44,7 @@ for message in st.session_state.chat_session.history:
         st.markdown(message.parts[0].text)
 
 # Input field for user's message
-user_prompt = st.chat_input("Ask Boo's ChatBot...")
+user_prompt = st.chat_input("Ask Boo's Finance ChatBot...")
 if user_prompt:
     # Add user's message to chat and display it
     st.chat_message("user").markdown(user_prompt)
